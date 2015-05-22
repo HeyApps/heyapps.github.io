@@ -4,7 +4,7 @@
  <title>Hey! Apps Blog</title>
  <link href="http://heyapps.github.io/atom.xml" rel="self"/>
  <id>http://heyapps.github.io</id>
- <updated>2015-05-22T20:50:34+03:00</updated>
+ <updated>2015-05-22T21:05:20+03:00</updated>
  <author>
    <name>Jacopo Rabolini</name>
    <uri>http://www.jacoporabolini.com</uri>
@@ -14,11 +14,11 @@
  
 
  <entry>
-   <title>Test post</title>
+   <title>Первый пост в блоге Hey! Apps</title>
    <link href="http://heyapps.github.io/test"/>
    <id>http://heyapps.github.io/test</id>
    <updated>2015-05-22T00:00:00+03:00</updated>
-   <content type="html">&lt;p&gt;This post was created just for test. Yeah, coz it’s funny, ain’t it?&lt;/p&gt; &lt;h2 id=&quot;this-is-a-h2&quot;&gt;This is a h2&lt;/h2&gt; &lt;h3 id=&quot;h3-h4-h5-and-h6-have-the-same-style&quot;&gt;h3, h4, h5 and h6 have the same style.&lt;/h3&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sed quo atque &lt;em&gt;perspiciatis&lt;/em&gt;. Eius cum possimus, maxime unde, asperiores neque blanditiis molestiae...</content>
+   <content type="html">&lt;p&gt;Этот пост был создан специально для того, чтобы показать возможности Jekyll.&lt;/p&gt; &lt;h2 id=&quot;this-is-a-h2&quot;&gt;This is a h2&lt;/h2&gt; &lt;h3 id=&quot;h3-h4-h5-and-h6-have-the-same-style&quot;&gt;h3, h4, h5 and h6 have the same style.&lt;/h3&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sed quo atque &lt;em&gt;perspiciatis&lt;/em&gt;. Eius cum possimus, maxime unde, asperiores neque blanditiis molestiae ipsa odit....</content>
  </entry>
 
  

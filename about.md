@@ -1,9 +1,12 @@
 ---
 layout: page
-title: About us
+title: О нас
 ---
-# About
-Emerald is a minimal theme created for Jekyll. The main purpose of Emerald is to provide a clear theme for those who want a blog ready to use, focused on the content and mobile-first.
+Hey! Apps - небольшая компания, основанная в 2014 году Никитой Карамовым и Камилем Ахметовым. В настоящее время состав остается неизменным.
+
+История началась с совместного проекта Никиты и Камиля под названием "Converter". Приложение представляло из себя простейший конвертер с функций конвертации более чем 15 различных величин, каждая из которых включала до 20 разных единиц измерения. Проект в данное время закрыт из-за низкой конкурентоспособности и покоится в архиве компании.
+
+
 
 For further details on Emerald, please visit the [repository on Github](https://github.com/KingFelix/emerald/).
 

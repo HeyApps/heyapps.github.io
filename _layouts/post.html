@@ -9,5 +9,18 @@ layout: default
 		{{ content }}
 		
 	</div>
+
+	<script type="text/javascript">(function() {
+      if (window.pluso) return;
+      var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+      s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+      s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://x.pluso.ru/pluso-x.js';
+      var h=d[g]('body')[0];
+      h.appendChild(s);
+    })();
+ 	</script>
+
+	<div class="pluso-engine" pluso-sharer={"buttons":"vkontakte,odnoklassniki,facebook,twitter,linkedin,google,tumblr,email,more","style":{"size":"big","shape":"square","theme":"theme11","css":"background:transparent"},"orientation":"horizontal","multiline":false}  data-title="{{ page.title }}" data-description="{{ content }}" data-url="heyapps.github.io"></div> 
+
 </article>
 

@@ -4,7 +4,7 @@
  <title>Hey! Apps Blog</title>
  <link href="http://heyapps.github.io/atom.xml" rel="self"/>
  <id>http://heyapps.github.io</id>
- <updated>2015-06-06T17:18:45+03:00</updated>
+ <updated>2015-06-06T18:40:58+03:00</updated>
  <author>
    <name>Jacopo Rabolini</name>
    <uri>http://www.jacoporabolini.com</uri>
@@ -14,9 +14,19 @@
  
 
  <entry>
+   <title>Версия 0.9.6 приложения Studyist</title>
+   <link href="http://heyapps.github.io/studyist-096"/>
+   <id>http://heyapps.github.io/studyist-096</id>
+   <updated>2015-06-06T00:00:00+03:00</updated>
+   <content type="html">&lt;p&gt;Привет, друзья! Сегодня мы рады представить вам свежую версию нашего приложения Studyist - 0.9.6! Позвольте мне рассказать вам о всех изменениях:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Добавлены “Тригонометрические функции” (раздел “Геометрия”). Вы можете высчитать все функции угла и даже больше!&lt;/li&gt; &lt;li&gt;Добавлен пункт “О приложении”. Тут вы узнаете чуть больше о нас и о приложении&lt;/li&gt;...</content>
+ </entry>
+
+ 
+
+ <entry>
    <title>Добро пожаловать в блог Hey! Apps</title>
-   <link href="http://heyapps.github.io/hello-world"/>
-   <id>http://heyapps.github.io/hello-world</id>
+   <link href="http://heyapps.github.io/hello-world%202"/>
+   <id>http://heyapps.github.io/hello-world 2</id>
    <updated>2015-05-22T00:00:00+03:00</updated>
    <content type="html">&lt;p&gt;Привет! Вы читаете самое первое сообщение в блоге компании Hey! Apps. Здесь будут появляться самы свежие новости по нашим продуктам.&lt;/p&gt; &lt;p&gt;Чтобы узнать о нас больше, откройте страницу “О нас” в главном меню сайта.&lt;/p&gt; &lt;p&gt;Начиная с этого момента все посты в профилях наших проектов в соц. сетях будут публиковаться с сылкой...</content>
  </entry>

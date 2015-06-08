@@ -4,7 +4,7 @@
  <title>Hey! Apps Blog</title>
  <link href="http://heyapps.github.io/atom.xml" rel="self"/>
  <id>http://heyapps.github.io</id>
- <updated>2015-06-08T21:03:50+03:00</updated>
+ <updated>2015-06-08T23:16:41+03:00</updated>
  <author>
    <name>Jacopo Rabolini</name>
    <uri>http://www.jacoporabolini.com</uri>
@@ -28,7 +28,7 @@
    <link href="http://heyapps.github.io/hello-world"/>
    <id>http://heyapps.github.io/hello-world</id>
    <updated>2015-05-22T00:00:00+03:00</updated>
-   <content type="html">&lt;p&gt;Привет! Вы читаете самое первое сообщение в блоге компании Hey! Apps. Здесь будут появляться самы свежие новости по нашим продуктам.&lt;/p&gt; &lt;p&gt;Чтобы узнать о нас больше, откройте страницу “О нас” в главном меню сайта.&lt;/p&gt; &lt;p&gt;Начиная с этого момента все посты в профилях наших проектов в соц. сетях будут публиковаться с сылкой...</content>
+   <content type="html">&lt;p&gt;Привет! Вы читаете самое первое сообщение в блоге компании Hey! Apps. Здесь будут появляться самы свежие новости по нашим продуктам.&lt;/p&gt; &lt;p&gt;Чтобы узнать о нас больше, откройте страницу “О нас” в главном меню сайта.&lt;/p&gt; &lt;p&gt;Начиная с этого момента все посты в профилях наших проектов в соц. сетях будут публиковаться с ссылкой...</content>
  </entry>
 
  

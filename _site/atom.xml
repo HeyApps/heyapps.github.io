@@ -4,12 +4,22 @@
  <title>Hey! Apps Blog</title>
  <link href="http://heyapps.github.io/atom.xml" rel="self"/>
  <id>http://heyapps.github.io</id>
- <updated>2015-06-08T23:16:41+03:00</updated>
+ <updated>2015-12-01T18:37:18+03:00</updated>
  <author>
    <name>Jacopo Rabolini</name>
    <uri>http://www.jacoporabolini.com</uri>
    <email>hello@jacoporabolini.com</email>
  </author>
+
+ 
+
+ <entry>
+   <title>«Снова в школу» вместе с Studyist 1.0!</title>
+   <link href="http://heyapps.github.io/studyist-10"/>
+   <id>http://heyapps.github.io/studyist-10</id>
+   <updated>2015-09-01T00:00:00+03:00</updated>
+   <content type="html">&lt;p&gt;Привет, друзья! Сегодня - большой день для нас, ведь сегодня в свет выходит первая релизная версия нашего приложения - Studyist 1.0! По сравнению с 0.9.6, в этой версии появилось великое множество новых возможностей:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Теперь наше приложение имеет обновленную иконку и новые официальные цвета - от режущих глаза ярко-голубых мы...</content>
+ </entry>
 
  
 

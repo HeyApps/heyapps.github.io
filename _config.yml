@@ -1,7 +1,7 @@
 # Site settings
-title: Hey! Apps Blog
-description: "Hey! Apps is an app-making company allocated in Kazan, Russia. You may know us because of Studyist - the only project we made until this time."
-url: "http://heyapps.github.io"
+title: "Блог koduo"
+description: "koduo - дуэт разработчиков из Казани, Россия. Вы можете знать нас по проекту Studyist."
+url: "http://koduo.github.io"
 author:
   name: "Jacopo Rabolini"
   email: "hello@jacoporabolini.com"

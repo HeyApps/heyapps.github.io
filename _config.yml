@@ -1,34 +1,43 @@
-# Site settings
-title: "Блог koduo"
-description: "koduo - дуэт разработчиков из Казани, Россия. Вы можете знать нас по проекту Studyist."
-url: "http://koduo.github.io"
-author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+name: 'Блог koduo'
+description: 'Дуэт разработчиков'
+meta_description: 'Блог koduo - дуэта разработчиков'
 
-# Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
+aboutPage: true
 
-# Default values
+markdown: redcarpet
+highlighter: pygments
+
+gems: [jekyll-paginate]
+paginate: 20
+baseurl: /
+domain_name: 'http://koduo.github.io'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://koduo.github.io'
+author:         'koduo'
+authorTwitter:  'karamoffnikk'
+
+permalink:       /:year/:title/
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Custom variables
-version: "1.1.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

@@ -1,72 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% include head.html %}
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+  <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico">
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Блог koduo" href="{{ site.baseurl }}rss.xml">
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/highlight.css">
 
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "assets/images/icons/apple-touch-icon-57x57.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "assets/images/icons/apple-touch-icon-60x60.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "assets/images/icons/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "assets/images/icons/apple-touch-icon-76x76.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "assets/images/icons/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "assets/images/icons/apple-touch-icon-120x120.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "assets/images/icons/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "assets/images/icons/apple-touch-icon-152x152.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "assets/images/icons/apple-touch-icon-180x180.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "assets/images/icons/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ "assets/images/icons/favicon-194x194.png" | prepend: site.baseurl }}" sizes="194x194">
+  <link rel="icon" type="image/png" href="{{ "assets/images/icons/favicon-96x96.png" | prepend: site.baseurl }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ "assets/images/icons/android-chrome-192x192.png" | prepend: site.baseurl }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ "assets/images/icons/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16">
+  <link rel="manifest" href="{{ "assets/images/icons/manifest.json" | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ "assets/images/icons/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#0071ba">
+  <link rel="shortcut icon" href="{{ "assets/images/icons/favicon.ico" | prepend: site.baseurl }}">
+  <meta name="msapplication-TileColor" content="#0071ba">
+  <meta name="msapplication-TileImage" content="{{ "assets/images/icons/mstile-144x144.png" | prepend: site.baseurl }}">
+  <meta name="msapplication-config" content="{{ "assets/images/icons/browserconfig.xml" | prepend: site.baseurl }}">
+  <meta name="theme-color" content="#0071ba">
+</head>
 <body>
-	<div id="wrap">
-	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
-    
-    <!-- Icon menu -->
-	  <a href="#" {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
 
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
+  {% include navigation.html %}
 
-    <!-- Main content -->
-	  <div id="container">
-		  
-		<main>
+  {% if page.profile %}
+      {% include profile.html %}
+  {% endif %}
 
-			{{ content }}
+  <section id="wrapper" class="{% if page.profile %}home{% endif %}">
+    {{ content }}
+  </section>
 
-	  </main>
-		
-		  <!-- Pagination links -->
-      {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if paginator.previous_page == 1 %}
-            <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% elsif paginator.previous_page%}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% else %}
-            <span class="page-item">&laquo;</span>
-          {% endif %}
-        
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <span class="page-item">{{ page }}</span>
-            {% elsif page == 1 %}
-              <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
-            {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
-            {% endif %}
-          {% endfor %}
-        
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
-          {% else %}
-            <span class="page-item">&raquo;</span>
-          {% endif %}
-        </div>
-        {% endif %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}assets/js/main.js"></script>
+  <script src="{{ site.baseurl }}assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
-	  </div>
-	    
-	    <!-- Footer -->
-	    {% include footer.html %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	    <!-- Script -->
-      {% include script.html %}
-
-	</div>
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
+
+
+

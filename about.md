@@ -8,4 +8,11 @@ profile: true
 
 Мы сделаем этот мир лучше...
 
+Наши проекты:
+
+- [Studyist][studyist]
+- продолжение следует...
+
 {% include footer.html %}
+
+[studyist]:	http://studyist.ru

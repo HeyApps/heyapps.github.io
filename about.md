@@ -8,9 +8,5 @@ profile: true
 
 Мы сделаем этот мир лучше...
 
-#### Наш единственный проект:
-- [Studyist][studyist]
-
+{% include projects.html %}
 {% include footer.html %}
-
-[studyist]:	http://studyist.ru
